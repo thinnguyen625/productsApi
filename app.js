@@ -5,6 +5,10 @@ const adapter = new FileSync('db/products.json');
 const db = low(adapter);
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({
+    extended: true
+}));
 
 app.get('/', function(req, res){
     const ret = {
@@ -34,11 +38,12 @@ app.get('/product', function(req, res){
 })
 
 app.post('/add-product', function(req, res){
-    const product = {
-      'id' : 100,
-      'name' : 'new',
-      'price' : 8888
-    }
+    // const product = {
+    //   'id' : 100,
+    //   'name' : 'new',
+    //   'price' : 8888
+    // }
+    const product = req.body;
     db.get('products')
       .push(product)
       .write();

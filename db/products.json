@@ -13,6 +13,11 @@
       "id": 99,
       "name": "new",
       "price": 8888
+    },
+    {
+      "id": 100,
+      "name": "101 from client",
+      "price": 9988
     }
   ],
   "user": {
