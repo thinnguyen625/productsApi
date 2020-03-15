@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 11 Pro Max"
+    },
+    {
+      "id": 100,
+      "name": "new",
+      "price": 8888
+    },
+    {
+      "id": 99,
+      "name": "new",
+      "price": 8888
+    }
+  ],
+  "user": {
+    "name": "typicode"
+  }
+}
